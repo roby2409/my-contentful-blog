@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+@font-face {
+  font-family: 'ocean-rush';
+  src: url('../asset/fonts/ocean-rush/Ocean\ Rush\ DEMO.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --pink: #f0047f;
+  --pink-light: #f890c6;
+  --black: #0e0016;
+  --black-alt: #1f1823;
+  --grey-dark: #2b2e3a;
+  --grey-mid: #475467;
+  --white: #effdff;
+  --white-alt: #9f9bf3;
+  --orange: #fc814a;
+
+  --body-horizontal-padding-sm: 1rem;
+  --body-horizontal-padding-lg: 2.5rem;
+  --font-family-main: "Inter UI var", Arial, sans-serif;
+  --font-weight-bold: 800;
+  --font-weight-mid: 600;
+  --font-weight-main: 400;
+  --border-radius-base: 0.375rem;
+  --global-max-width: 1440px;
+  --feed-max-width: 510px;
+  --post-max-width: 1064px;
+  --base-shadow-filter: drop-shadow(0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25));
+  --global-transition-time: 0.21s;
+  --scroll-behaviour: smooth;
+  --form-height: 48px;
+  /* Light pink color */
+
+  /* Other variables */
+  --page-bg: radial-gradient(farthest-corner at 100% 100%, var(--white-alt) 0%, var(--white) 50%);
+  --whitep4nth3r-bg-svg: url('../asset/image/whitep4nth3r-lightmode.svg');
+}
+
+body {
+  overflow-x: hidden;
+  /* font-weight: var(--font-weight-main);
+  font-family: var(--font-family-main);
+  font-size: 1rem; */
+  color: var(--color-fg);
+  background: var(--color-bg);
+  background-image: var(--page-bg);
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#glitchHead {
+  font-size: 150%;
+  text-shadow: 0 0 18px white;
+  position: relative;
+}
+
+#glitchHead::after,
+#glitchHead::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 3px;
+  text-shadow: none;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F3DPAzwJxrwCre%2Fgiphy.gif&f=1&nofb=1&ipt=dc4dd2260b9ccecc06fc391c3c781a47f6dd210b6e9d1d80c61beb36b618cdc9&ipo=images);
+  background-clip: text;
+  color: transparent;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+}
+
+#glitchHead::before {
+  left: -3px;
+  mix-blend-mode: lighten;
+}
+
+.dark {
+  background-color: #0e0016;
+  color-scheme: dark;
+  --page-bg: radial-gradient(farthest-corner at 100% 100%, var(--black-alt) 0%, var(--black) 50%);
+  --whitep4nth3r-bg-svg: url('../asset/image/whitep4nth3r-darkmode.svg');
+  --color-bg: var(--black);
+  --color-fg: var(--white);
+  --color-fg-copy: rgba(255, 255, 255, 0.92);
+  --color-link: var(--pink-light);
+  --color-brush-bg: rgba(255, 255, 255, 0.72);
+  --color-focus-outline: var(--pink-light);
+  --card-bg: rgba(255, 255, 255, 0.02);
+  --card-bg-hover: rgba(255, 255, 255, 0.08);
+  --card-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.16);
+  --card-box-shadow-hover: inset 0px 1px 0px rgba(255, 255, 255, 0.16);
+}
+
+@keyframes fadeInBrush {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-50%, 5%);
+  }
+
+  100% {
+    transform: translate(-100%, 12%);
+  }
+}
