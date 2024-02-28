@@ -8,6 +8,7 @@ const NavbarSection: React.FC = () => {
   const navlinks: NavItemType[] = [
     { id: 1, text: 'Me', to: '/', dropdown: 'Me' },
     { id: 2, text: 'About', to: '/about', dropdown: 'About' },
+    { id: 3, text: 'Projects', to: '/projects', dropdown: 'Projects' },
     { id: 4, text: 'My Stories', to: '/stories', dropdown: 'Story' },
     { id: 5, text: 'Uses', to: '/uses', dropdown: 'Uses' },
     { id: 6, text: 'Activity', to: '/activity', dropdown: 'Activity' },
