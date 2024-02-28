@@ -7,11 +7,11 @@ interface AboutSectionProps {
 
 const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
   return (
-    <section className="mx-auto -mt-12 h-full mb-12 flex flex-col p-4 md:-mt-0 md:p-0">
+    <section className="mx-auto -mt-12 mb-12 flex h-full flex-col p-4 md:-mt-0 md:p-0">
       <Heading>About 💭</Heading>
       <React.Fragment>
         <Text style={{ marginBottom: `1.5rem` }}>
-          I&apos;m a 27-year-old enthusiast, deeply immersed in the dynamic world of technology,
+          I&apos;m a 28-year-old enthusiast, deeply immersed in the dynamic world of technology,
           driven by an insatiable curiosity to explore its limitless possibilities. My passion lies
           in the intricate art of software development, where I constantly seek to innovate and
           create impactful solutions that resonate with users worldwide.&quot;

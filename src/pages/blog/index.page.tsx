@@ -20,7 +20,7 @@ const Blog = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
       {page.seoFields && <SeoFields {...page.seoFields} />}
       <HomePageLayout>
         <Animate>
-          <section className="mx-auto -mt-12 h-full mb-12 flex flex-col p-4 md:-mt-0 md:p-0">
+          <section className="mx-auto -mt-12 mb-12 flex h-full flex-col p-4 md:-mt-0 md:p-0">
             <Heading style={{ marginBottom: '0.5rem' }}>
               Welcome to my blogs and tutorials <span className="wave">😎📚🔖</span>
             </Heading>
@@ -29,10 +29,11 @@ const Blog = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
             </div>
             <React.Fragment>
               <Text style={{ marginBottom: `1.5rem` }}>
-                I&apos;m a 27-year-old enthusiast, deeply immersed in the dynamic world of technology,
-                driven by an insatiable curiosity to explore its limitless possibilities. My passion lies
-                in the intricate art of software development, where I constantly seek to innovate and
-                create impactful solutions that resonate with users worldwide.&quot;
+                I&apos;m a 28-year-old enthusiast, deeply immersed in the dynamic world of
+                technology, driven by an insatiable curiosity to explore its limitless
+                possibilities. My passion lies in the intricate art of software development, where I
+                constantly seek to innovate and create impactful solutions that resonate with users
+                worldwide.&quot;
               </Text>
               <div className="flex w-[100%] flex-col space-x-2 md:w-[60rem] md:flex-row dark:border-teal-900  dark:bg-[#10161a]/50">
                 <Link href={`/blog/${page.featuredBlogPost.slug}`}>
