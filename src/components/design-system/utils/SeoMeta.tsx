@@ -6,7 +6,7 @@ interface SeoMetaProps {
 }
 
 const seoKeywords =
-  'Roby Setiawan, zain arif, Roby Setiawan, @penulisduduk, @zain, code, typescript, javascript, php';
+  'Roby Setiawan, muahammad roby, Roby iOS, Roby Flutter, Roby Setiawan, programmer mobile, mobile developer, flutter, typescript, flutter developer, full stack developer';
 
 const SeoMeta: React.FC<SeoMetaProps> = ({ description, title }) => {
   return (
