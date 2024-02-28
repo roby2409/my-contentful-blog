@@ -21,7 +21,7 @@ const SeoMeta: React.FC<SeoMetaProps> = ({ description, title }) => {
         <meta name="keywords" content={seoKeywords} />
         <meta property="og:title" content={title} />
         <meta property="og:site_name" content="Roby Setiawan" />
-        <meta property="og:url" content="https://muhamadzain.me" />
+        <meta property="og:url" content="https://robysetiawan.vercel.app" />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
       </Head>
