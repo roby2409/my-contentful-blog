@@ -1,13 +1,8 @@
 import { NextPage } from 'next';
 import { HomePageLayout } from '@src/layouts/HomePageLayout';
-import {
-  MainSection,
-  AboutSection,
-  ExperienceSection,
-  StorySection,
-} from '@src/components/modules';
 import { Animate, SeoMeta } from '@src/components/design-system/utils';
 import { Story } from '@src/types/stories';
+import { StorySection } from '@src/components/modules';
 import { getAllStories } from '@src/libs/stories';
 
 export async function getStaticProps() {
@@ -19,24 +14,24 @@ export async function getStaticProps() {
   };
 }
 
-interface HomePageProps {
+interface StoryPageProps {
   stories: Story[];
 }
 
-const Home: NextPage<HomePageProps> = ({ stories }) => {
+const BlogPage = ({ stories }) => {
   return (
     <>
-      <SeoMeta description={'Home - Roby Setiawan'} title={'Roby Setiawan - Software Engineer'} />
+      <SeoMeta
+        description={'Stories - Roby Setiawan'}
+        title={'Roby Setiawan - Software Engineer'}
+      />
       <HomePageLayout>
         <Animate>
-          <MainSection />
-          <AboutSection short={true} />
-          <ExperienceSection />
-          <StorySection stories={stories} isLimited={true} />
+          <StorySection stories={stories} />
         </Animate>
       </HomePageLayout>
     </>
   );
 };
 
-export default Home;
+export default BlogPage;

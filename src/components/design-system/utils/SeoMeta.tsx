@@ -6,7 +6,7 @@ interface SeoMetaProps {
 }
 
 const seoKeywords =
-  'Roby Setiawan, zain arif, Roby Setiawan, @penulisduduk, @zain, code, typescript, javascript, php';
+  'Roby Setiawan, muahammad roby, Roby iOS, Roby Flutter, Roby Setiawan, programmer mobile, mobile developer, flutter, typescript, flutter developer, full stack developer';
 
 const SeoMeta: React.FC<SeoMetaProps> = ({ description, title }) => {
   return (
@@ -21,7 +21,7 @@ const SeoMeta: React.FC<SeoMetaProps> = ({ description, title }) => {
         <meta name="keywords" content={seoKeywords} />
         <meta property="og:title" content={title} />
         <meta property="og:site_name" content="Roby Setiawan" />
-        <meta property="og:url" content="https://muhamadzain.me" />
+        <meta property="og:url" content="https://robysetiawan.vercel.app" />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
       </Head>
