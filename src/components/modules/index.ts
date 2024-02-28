@@ -12,6 +12,7 @@ export { default as StorySection } from './sections/StorySection';
 export { default as DropDownNav } from './components/DropdownNav';
 export { default as ToogleNav } from './components/ToogleNav';
 export { default as SocialMediaLink } from './components/SocialMediaLink';
+export { default as ProjectList } from './components/ProjectList';
 export { default as StoryCard } from './components/StoryCard';
 export { default as SpotifyCurrentPlaying } from './components/SpotifyCurrentPlaying';
 export { default as SpotifyPlaylistCard } from './components/SpotifyPlaylistCard';
