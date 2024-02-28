@@ -21,6 +21,13 @@ export default function FooterSection() {
           /about
         </Link>
         <Link
+          href="/projects"
+          className="no-underline underline-offset-2 transition-colors hover:text-gray-800 hover:underline dark:hover:text-gray-100"
+          rel="noopener noreferrer"
+        >
+          /projects
+        </Link>
+        <Link
           href="/stories"
           className="no-underline underline-offset-2 transition-colors hover:text-gray-800 hover:underline dark:hover:text-gray-100"
           rel="noopener noreferrer"
