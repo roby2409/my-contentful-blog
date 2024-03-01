@@ -1,6 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
+  const googleSiteVerification = process.env.VERIFICATION_GOOGLE as string;
   return (
     <Html lang="en">
       <Head>
@@ -13,6 +14,7 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="google-site-verification" content={googleSiteVerification} />
       </Head>
       <body>
         <Main />
