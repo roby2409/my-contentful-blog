@@ -4,9 +4,13 @@ import { useTranslation } from 'next-i18next';
 
 import { getServerSideTranslations } from './utils/get-serverside-translations';
 
-import { ArticleContent, ArticleHero, ArticleTileGrid } from '@src/components/features/article';
-import { SeoFields } from '@src/components/features/seo';
-import { Container } from '@src/components/shared/container';
+import {
+  ArticleContent,
+  ArticleHero,
+  ArticleTileGrid,
+} from '@src/components/modules/features/article';
+import { SeoFields } from '@src/components/modules/features/seo';
+import { Container } from '@src/components/modules/shared/container';
 import { client, previewClient } from '@src/libs/client';
 import { revalidateDuration } from '@src/pages/utils/constants';
 

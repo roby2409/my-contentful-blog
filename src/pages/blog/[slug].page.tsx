@@ -1,21 +1,21 @@
 import { HomePageLayout } from '@src/layouts/HomePageLayout';
 import { Animate, SeoMeta } from '@src/components/design-system/utils';
 import React, { useEffect, useState } from 'react';
-import { Container } from '@src/components/modules/components/shared/container';
+import { Container } from '@src/components/modules/shared/container';
 import {
   ArticleContent,
   ArticleHero,
   ArticleTileGrid,
-} from '@src/components/modules/components/features/article';
+} from '@src/components/modules/features/article';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { revalidateDuration } from '../utils/constants';
 import { client } from '@src/libs/client';
-import { SeoFields } from '@src/components/modules/components/features/seo';
+import { SeoFields } from '@src/components/modules/features/seo';
 import { formatPublishedAt, getPlainTextFromHeader } from '@src/pages/utils/formatingHelper';
 import readingTime from 'reading-time';
 import { documentToPlainTextString } from '@contentful/rich-text-plain-text-renderer';
-import { BLOCKS } from '@contentful/rich-text-types'
-import slugify from 'slugify'
+import { BLOCKS } from '@contentful/rich-text-types';
+import slugify from 'slugify';
 import { twMerge } from 'tailwind-merge';
 
 const DetailBlog = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
@@ -36,17 +36,17 @@ const DetailBlog = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
     useEffect(() => {
       const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
+        entries => {
+          entries.forEach(entry => {
             if (entry.isIntersecting) {
               setActiveLink(entry.target.id);
             }
           });
         },
-        { threshold: 0.5 }
+        { threshold: 0.5 },
       );
 
-      document.querySelectorAll('h2[id]').forEach((element) => {
+      document.querySelectorAll('h2[id]').forEach(element => {
         observer.observe(element);
       });
 
@@ -69,41 +69,42 @@ const DetailBlog = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
       }
     };
 
-    const getHeadersFromRichText = (richText) => {
-      const headers = (content) => content.nodeType === BLOCKS.HEADING_2
+    const getHeadersFromRichText = richText => {
+      const headers = content => content.nodeType === BLOCKS.HEADING_2;
 
-      return richText.content.filter(headers).map((heading) => {
-
-        const plainText = getPlainTextFromHeader(heading.content)
+      return richText.content.filter(headers).map(heading => {
+        const plainText = getPlainTextFromHeader(heading.content);
         return {
           text: plainText,
           href: `#${slugify(plainText)}`,
-        }
-      })
+        };
+      });
     };
 
     return (
-      <div className='divide-y divide-dashed'>
-        <h3 className="text-gray-900 dark:text-gray-100 md:text-xl mb-2">Sections this page</h3>
+      <div className="divide-y divide-dashed">
+        <h3 className="mb-2 text-gray-900 md:text-xl dark:text-gray-100">Sections this page</h3>
         <div>
-          <ol className='mt-4'>
+          <ol className="mt-4">
             {getHeadersFromRichText(content.json).map((item, i) => (
-              <li key={i} >
+              <li key={i}>
                 <a
-                  className={`${activeLink === slugify(item.text) ? 'text-blue-400' : 'text-gray-400 dark:text-gray-300'} divide-y divide-dashed`}
+                  className={`${
+                    activeLink === slugify(item.text)
+                      ? 'text-blue-400'
+                      : 'text-gray-400 dark:text-gray-300'
+                  } divide-y divide-dashed`}
                   href={`#${slugify(item.text)}`}
-                  onClick={(e) => handleClick(e, `#${slugify(item.text)}`)}
-                  style={{ marginLeft: "0px" }}
+                  onClick={e => handleClick(e, `#${slugify(item.text)}`)}
+                  style={{ marginLeft: '0px' }}
                 >
                   {item.text}
                 </a>
-                <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+                <hr className="my-2 h-px border-0 bg-gray-200 dark:bg-gray-700" />
               </li>
             ))}
-
           </ol>
         </div>
-
       </div>
     );
   };
@@ -121,8 +122,8 @@ const DetailBlog = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
                 {formatPublishedAt(blogPost.publishedDate as Date)} {Math.ceil(minutes)} min read{' '}
               </p>
             </div>
-            <div className='flex flex-col md:flex-row'>
-              <div className="w-full md:w-3/4 md:mr-8">
+            <div className="flex flex-col md:flex-row">
+              <div className="w-full md:mr-8 md:w-3/4">
                 <ArticleHero
                   article={blogPost}
                   isFeatured={props.isFeatured}
@@ -138,11 +139,13 @@ const DetailBlog = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
                   </Container>
                 )}
               </div>
-              <div className="hidden md:block w-1/4 px-10">
-                <div className={twMerge(
-                  `fixed w-[270px] h-[400px] overflow-hidden rounded-2xl border border-gray300 shadow-lg`,
-                )}>
-                  <div className="overflow-auto max-h-[calc(100vh-9rem-113px)] pb-4 mb-10 px-4 pt-4 full-width">
+              <div className="hidden w-1/4 px-10 md:block">
+                <div
+                  className={twMerge(
+                    `border-gray300 fixed h-[400px] w-[270px] overflow-hidden rounded-2xl border shadow-lg`,
+                  )}
+                >
+                  <div className="full-width mb-10 max-h-[calc(100vh-9rem-113px)] overflow-auto px-4 pb-4 pt-4">
                     <div className="mt-4 flex flex-col space-y-2 text-sm">
                       <TableOfContents post={blogPost} />
                     </div>
@@ -150,7 +153,6 @@ const DetailBlog = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
                 </div>
               </div>
             </div>
-
           </section>
         </Animate>
       </HomePageLayout>
@@ -203,10 +205,10 @@ export async function getStaticPaths() {
   const paths = dataPerLocale?.pageBlogPostCollection?.items?.map(blogPost => {
     return blogPost?.slug
       ? {
-        params: {
-          slug: blogPost.slug,
-        },
-      }
+          params: {
+            slug: blogPost.slug,
+          },
+        }
       : undefined;
   });
   const filteredPaths = paths?.filter(Boolean) || [];
