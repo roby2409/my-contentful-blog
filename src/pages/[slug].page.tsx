@@ -8,9 +8,9 @@ import {
   ArticleContent,
   ArticleHero,
   ArticleTileGrid,
-} from '@src/components/modules/components/features/article';
-import { SeoFields } from '@src/components/modules/components/features/seo';
-import { Container } from '@src/components/modules/components/shared/container';
+} from '@src/components/modules/features/article';
+import { SeoFields } from '@src/components/modules/features/seo';
+import { Container } from '@src/components/modules/shared/container';
 import { client, previewClient } from '@src/libs/client';
 import { revalidateDuration } from '@src/pages/utils/constants';
 

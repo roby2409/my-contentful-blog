@@ -1,7 +1,7 @@
 import { useContentfulInspectorMode } from '@contentful/live-preview/react';
 import { twMerge } from 'tailwind-merge';
 
-import { CtfImage } from '../../features/contentful';
+import { CtfImage } from '../contentful';
 import { ComponentRichImage } from '@src/libs/__generated/sdk';
 
 interface ArticleImageProps {
@@ -16,7 +16,7 @@ export const ArticleImage = ({ image }: ArticleImageProps) => {
         <CtfImage
           nextImageProps={{
             className: twMerge(
-              'mt-0 mb-0 rounded-2xl border border-gray300 shadow-lg'
+              'mt-0 mb-0 rounded-2xl border border-gray300 shadow-lg',
               // image.fullWidth
               //   ? 'md:w-screen md:max-w-[calc(100vw-40px)] md:shrink-0'
               //   : 'rounded-2xl border border-gray300 shadow-lg',

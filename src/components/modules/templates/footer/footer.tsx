@@ -3,7 +3,7 @@ import { Container } from '../../shared/container/Container';
 
 export const Footer = () => {
   return (
-    <footer className="border-t-color mt-10 border-t border-gray200">
+    <footer className="border-t-color border-gray200 mt-10 border-t">
       <Container className="py-8">
         <h2 className="h4 mb-4">about us</h2>
         <div className="max-w-4xl">

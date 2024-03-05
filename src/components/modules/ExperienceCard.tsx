@@ -21,8 +21,8 @@ const ExperienceCard: React.FC<Experience> = props => {
 
   return (
     <div
-      className="bg-gray-100/50 border-teal-100 dark:border-teal-900 mb-6 mt-5 flex w-full flex-col items-center rounded-lg
-      border p-6 shadow-md transition-all duration-300 ease-in hover:shadow-lg sm:flex-row dark:bg-[#10161a]/50"
+      className="mb-6 mt-5 flex w-full flex-col items-center rounded-lg border border-teal-100 bg-gray-100/50
+      p-6 shadow-md transition-all duration-300 ease-in hover:shadow-lg sm:flex-row dark:border-teal-900 dark:bg-[#10161a]/50"
     >
       {props.logo ? (
         <div className="mb-5">
@@ -43,7 +43,7 @@ const ExperienceCard: React.FC<Experience> = props => {
       )}
       <div className="w-full text-left">
         <div className="mb-3 flex items-center justify-start">
-          <h1 className="dark:text-gray-100 mr-3 text-2xl font-bold">{props.name}</h1>
+          <h1 className="mr-3 text-2xl font-bold dark:text-gray-100">{props.name}</h1>
           <Tag title={props.current ? 'Current' : 'Past'} />
         </div>
         <Text>
@@ -55,7 +55,7 @@ const ExperienceCard: React.FC<Experience> = props => {
         </div>
         <div className="mt-2 w-full flex-row items-center justify-between">
           <div className="mb-4 mt-2 flex items-center">
-            <FiMapPin className="text-gray-600 dark:text-gray-300 mr-2" />
+            <FiMapPin className="mr-2 text-gray-600 dark:text-gray-300" />
             <Text>{props.location}</Text>
           </div>
           <ButtonLink href={props.link} target="_blank">

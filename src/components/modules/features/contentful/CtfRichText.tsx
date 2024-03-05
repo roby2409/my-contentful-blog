@@ -1,23 +1,23 @@
 import { documentToReactComponents, Options } from '@contentful/rich-text-react-renderer';
 import { BLOCKS, Document } from '@contentful/rich-text-types';
 import { dark, a11yLight } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
-import { ArticleImage } from '../../features/article';
+import { ArticleImage } from '../article';
 import { ComponentRichImage } from '@src/libs/__generated/sdk';
 import { useTheme } from '@src/context/ThemeContext';
 import { getPlainTextFromHeader } from '@src/pages/utils/formatingHelper';
-import slugify from 'slugify'
+import slugify from 'slugify';
 
 export type EmbeddedEntryType = ComponentRichImage | null;
 
 export interface ContentfulRichTextInterface {
   json: Document;
   links?:
-  | {
-    entries: {
-      block: Array<EmbeddedEntryType>;
-    };
-  }
-  | any;
+    | {
+        entries: {
+          block: Array<EmbeddedEntryType>;
+        };
+      }
+    | any;
 }
 
 export const EmbeddedEntry = (entry: EmbeddedEntryType) => {
@@ -41,9 +41,9 @@ export const contentfulBaseRichTextOptions = ({ links }: ContentfulRichTextInter
       return <EmbeddedEntry {...entry} />;
     },
     [BLOCKS.HEADING_2]: (node, children) => {
-      const plainText = getPlainTextFromHeader(node.content)
+      const plainText = getPlainTextFromHeader(node.content);
 
-      return <h2 id={slugify(plainText)}>{children}</h2>
+      return <h2 id={slugify(plainText)}>{children}</h2>;
     },
   },
 });
@@ -53,7 +53,7 @@ export const CtfRichText = ({ json, links }: ContentfulRichTextInterface) => {
   const { theme } = useTheme();
 
   return (
-    <article className="prose prose-sm max-w-none dark:prose-invert">
+    <article className="prose prose-sm dark:prose-invert max-w-none">
       {documentToReactComponents(json, baseOptions)}
     </article>
   );

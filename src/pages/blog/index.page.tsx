@@ -7,8 +7,8 @@ import { revalidateDuration } from '../utils/constants';
 import { client, previewClient } from '@src/libs/client';
 import { PageBlogPostOrder } from '@src/libs/__generated/sdk';
 import Link from 'next/link';
-import { ArticleHero, ArticleTileGrid } from '@src/components/modules/components/features/article';
-import { SeoFields } from '@src/components/modules/components/features/seo';
+import { ArticleHero, ArticleTileGrid } from '@src/components/modules/features/article';
+import { SeoFields } from '@src/components/modules/features/seo';
 
 const Blog = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const posts = props.posts;

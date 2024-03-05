@@ -1,6 +1,6 @@
 import { FiMoon, FiSun } from 'react-icons/fi';
 import { useEffect, useState } from 'react';
-import { RoundedButtonBox } from '../../design-system';
+import { RoundedButtonBox } from '../design-system';
 import { useTheme } from '@src/context/ThemeContext';
 
 const ToggleNav: React.FC = () => {

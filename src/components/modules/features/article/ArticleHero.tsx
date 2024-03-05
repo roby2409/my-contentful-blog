@@ -1,9 +1,9 @@
 import { useContentfulInspectorMode } from '@contentful/live-preview/react';
 import { twMerge } from 'tailwind-merge';
 
-import { ArticleAuthor } from '../article/ArticleAuthor';
-import { ArticleLabel } from '../article/ArticleLabel';
-import { CtfImage } from '../../features/contentful';
+import { ArticleAuthor } from './ArticleAuthor';
+import { ArticleLabel } from './ArticleLabel';
+import { CtfImage } from '../contentful';
 import { FormatDate } from '../../shared/format-date';
 import { PageBlogPostFieldsFragment } from '@src/libs/__generated/sdk';
 import { Heading, Text } from '@src/components/design-system';
@@ -25,7 +25,7 @@ export const ArticleHero = ({
   return (
     <div
       className={twMerge(
-        `flex flex-col overflow-hidden rounded-2xl border border-gray300 shadow-lg`,
+        `border-gray300 flex flex-col overflow-hidden rounded-2xl border shadow-lg`,
         isReversedLayout ? 'lg:flex-row-reverse' : 'lg:flex-row',
       )}
     >
@@ -53,7 +53,7 @@ export const ArticleHero = ({
           )}
           <div
             className={twMerge(
-              'ml-auto hidden pl-2 text-xs text-gray600',
+              'text-gray600 ml-auto hidden pl-2 text-xs',
               isReversedLayout ? 'lg:block' : '',
             )}
             {...inspectorProps({ fieldId: 'publishedDate' })}
@@ -68,7 +68,7 @@ export const ArticleHero = ({
           </Text>
         )}
         <div
-          className={twMerge('mt-2 text-xs text-gray600', isReversedLayout ? 'lg:hidden' : '')}
+          className={twMerge('text-gray600 mt-2 text-xs', isReversedLayout ? 'lg:hidden' : '')}
           {...inspectorProps({ fieldId: 'publishedDate' })}
         >
           <FormatDate date={publishedDate} />
