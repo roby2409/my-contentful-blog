@@ -2,6 +2,12 @@ import { ProjectType } from '@src/types/projects';
 
 export const projects: ProjectType[] = [
   {
+    name: 'lms Web Admin dashboard',
+    description: 'dashboard admin lms (private project from singapore)',
+    link: '#',
+    img: 'admindashboard.png',
+  },
+  {
     name: '(NON DISCLOSURE AGREEMENT)',
     description: 'Application used by police officers from the Indonesian government',
     link: '#',
