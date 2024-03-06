@@ -2,6 +2,12 @@ import { ProjectType } from '@src/types/projects';
 
 export const projects: ProjectType[] = [
   {
+    name: 'flutter consultation app',
+    description: 'flutter consultation by chat (private project)',
+    link: '#',
+    img: 'flutter-app-doc.png',
+  },
+  {
     name: 'lms Web Admin dashboard',
     description: 'dashboard admin lms (private project from singapore)',
     link: '#',
