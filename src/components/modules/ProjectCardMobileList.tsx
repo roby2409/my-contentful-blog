@@ -3,11 +3,11 @@ import Image from 'next/image';
 import NextImage from 'next/image';
 import React, { useState } from 'react';
 
-interface ProjectListProps {
+interface ProjectCardMobileListProps {
   project: ProjectType;
 }
 
-const ProjectList: React.FC<ProjectListProps> = ({ project }) => {
+const ProjectCardMobileList: React.FC<ProjectCardMobileListProps> = ({ project }) => {
   const [isLoading, setLoading] = useState(true);
 
   return (
@@ -16,9 +16,9 @@ const ProjectList: React.FC<ProjectListProps> = ({ project }) => {
         <Image
           loading="lazy"
           src={`/images/projects/${project.img}`}
-          width={0}
-          height={0}
-          sizes="100vw"
+          width={100}
+          height={100}
+          sizes="30vw"
           className={`
         duration-700 ease-in-out group-hover:opacity-75 ${
           isLoading ? 'scale-110 blur-2xl grayscale' : 'scale-100 blur-0 grayscale-0'
@@ -47,4 +47,4 @@ const ProjectList: React.FC<ProjectListProps> = ({ project }) => {
   );
 };
 
-export default ProjectList;
+export default ProjectCardMobileList;

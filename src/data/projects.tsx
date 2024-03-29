@@ -1,17 +1,17 @@
 import { ProjectType } from '@src/types/projects';
 
-export const projects: ProjectType[] = [
-  {
-    name: 'flutter consultation app',
-    description: 'flutter consultation by chat (private project)',
-    link: '#',
-    img: 'flutter-app-doc.png',
-  },
+export const projectWebs: ProjectType[] = [
   {
     name: 'lms Web Admin dashboard',
-    description: 'dashboard admin lms (private project from singapore)',
+    description: 'dashboard admin lms (private project from singapore) Using Tailwindcss, React JS',
     link: '#',
     img: 'admindashboard.png',
+  },
+  {
+    name: 'Kejagung Dashboard',
+    description: 'Dashboard untuk kejaksaan Using Tailwindcss, Nuxt JS',
+    link: '#',
+    img: 'kejaksaan.png',
   },
   {
     name: '(NON DISCLOSURE AGREEMENT)',
@@ -25,7 +25,7 @@ export const projects: ProjectType[] = [
   },
   {
     name: 'Direktorat Kepolisian Perairan dan udara sumsel (ditpolairud)',
-    description: 'Web Profile',
+    description: 'Web Profile using wordpress',
     link: 'https://ditpolairudpoldasumsel.com/',
     img: '1.jpeg',
   },
@@ -37,7 +37,7 @@ export const projects: ProjectType[] = [
   },
   {
     name: 'Cctv Palembang (PD Tech)',
-    description: 'Company Profile',
+    description: 'Company Profile using wordpress',
     link: 'https://cctvpalembang.co.id/',
     img: '3.jpeg',
   },
@@ -55,7 +55,7 @@ export const projects: ProjectType[] = [
   },
   {
     name: 'Sumsel 24',
-    description: 'Web Application',
+    description: 'Web Application using using wordpress',
     link: 'https://www.sumsel24.com/',
     img: '6.jpg',
   },
@@ -114,6 +114,21 @@ export const projects: ProjectType[] = [
     name: 'Weeding Invitation Website of Helmi & Yuyun',
     description: 'Weeding Invitation Helmi & Yuyun Using Laravel',
     img: '16.png',
+  },
+  {
+    name: 'Weeding Invitation of Anggit Febriyanto & Indri Febriyani',
+    description:
+      'Weeding Invitation Anggit Febriyanto & Indri Febriyani Using Gatsby JS, React JS, Supabase',
+    img: '17.png',
+  },
+];
+
+export const projectMobiles: ProjectType[] = [
+  {
+    name: 'Weeding Invitation of Anggit Febriyanto & Indri Febriyani',
+    description:
+      'Weeding Invitation Anggit Febriyanto & Indri Febriyani Using Gatsby JS, React JS, Supabase',
+    img: '17.png',
   },
   {
     name: 'Weeding Invitation of Anggit Febriyanto & Indri Febriyani',
