@@ -11,7 +11,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ project }) => {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <p>
+    <div>
       {project.img ? (
         <Image
           loading="lazy"
@@ -43,7 +43,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ project }) => {
           {project.description}
         </p>
       </div>
-    </p>
+    </div>
   );
 };
 
