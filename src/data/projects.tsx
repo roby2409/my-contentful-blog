@@ -89,4 +89,36 @@ export const projects: ProjectType[] = [
     link: '#',
     img: '11.jpg',
   },
+  {
+    name: 'Sistem Informasi Tata ruang Magelang',
+    description: 'Geographic Information System (GIS) Dashboard Using Codeigniter3',
+    img: '12.jpg',
+  },
+  {
+    name: 'JTLExpress Shipper Dashboard',
+    description: 'JTLExpress Shipper Dashboard Using Codeigniter3',
+    img: '13.png',
+  },
+  {
+    name: 'Jogja Cagar',
+    description: 'Cagar Budaya Information in Yogyakarta Using Laravel',
+    img: '14.png',
+  },
+  {
+    name: 'Sistem Informasi Kabar Desa',
+    description:
+      'Web Application Dashboard provide Information Village in Yogyakarta Using Laravel',
+    img: '15.png',
+  },
+  {
+    name: 'Weeding Invitation Website of Helmi & Yuyun',
+    description: 'Weeding Invitation Helmi & Yuyun Using Laravel',
+    img: '16.png',
+  },
+  {
+    name: 'Weeding Invitation of Anggit Febriyanto & Indri Febriyani',
+    description:
+      'Weeding Invitation Anggit Febriyanto & Indri Febriyani Using Gatsby JS, React JS, Supabase',
+    img: '17.png',
+  },
 ];
