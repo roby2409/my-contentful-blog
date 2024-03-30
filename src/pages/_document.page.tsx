@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 export default function Document() {
   const googleSiteVerification = process.env.VERIFICATION_GOOGLE as string;
@@ -19,6 +20,10 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <Script
+          src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"
+          strategy="beforeInteractive"
+        />
       </body>
     </Html>
   );

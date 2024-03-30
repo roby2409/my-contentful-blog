@@ -125,15 +125,21 @@ export const projectWebs: ProjectType[] = [
 
 export const projectMobiles: ProjectType[] = [
   {
-    name: 'Weeding Invitation of Anggit Febriyanto & Indri Febriyani',
-    description:
-      'Weeding Invitation Anggit Febriyanto & Indri Febriyani Using Gatsby JS, React JS, Supabase',
-    img: '17.png',
+    name: 'Kejaksaan dashboard mobile flutter',
+    description: 'dashboard mobile version using flutter',
+    img: 'kejagung',
+    imgMobile: ['1.png', '2.png', '3.png', '4.png'],
   },
   {
-    name: 'Weeding Invitation of Anggit Febriyanto & Indri Febriyani',
-    description:
-      'Weeding Invitation Anggit Febriyanto & Indri Febriyani Using Gatsby JS, React JS, Supabase',
-    img: '17.png',
+    name: 'Cesa (Cerdas Sosial Media)',
+    description: 'Aplikasi pendeteksi kecanduan gadget',
+    img: 'cesa',
+    imgMobile: ['1.png', '2.png', '3.png', '4.png'],
+  },
+  {
+    name: 'LMS (Learning management system)',
+    description: 'Aplikasi absensi terintegrasi Smartfren',
+    img: 'lms',
+    imgMobile: ['1.png', '2.png', '3.png', '4.png'],
   },
 ];

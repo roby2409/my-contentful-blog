@@ -3,4 +3,5 @@ export interface ProjectType {
   description: string;
   link?: string;
   img?: string;
+  imgMobile?: string[];
 }
