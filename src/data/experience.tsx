@@ -4,7 +4,7 @@ export const experienceList: Experience[] = [
   {
     id: 1,
     name: "Djelas Tandatangan Bersama (Part of OXY Creative's Outsource Team.)",
-    description: 'Software Developer',
+    description: 'Mobile Software Developer - iOS',
     year: 'Jun 2021 - Feb 2024',
     employmentType: 'contract',
     location: 'Jakarta Selatan, Indonesia',
@@ -15,20 +15,8 @@ export const experienceList: Experience[] = [
   },
   {
     id: 2,
-    name: "Pando Akar Teknologi (Part of OXY Creative's Outsource Team.)",
-    description: 'Software Developer',
-    year: 'Jan 2022 - Feb 2024',
-    employmentType: 'contract',
-    location: 'Jakarta Selatan, Indonesia',
-    remote: true,
-    current: false,
-    link: 'https://pando.id',
-    task: 'Develop an eKYC (electronic Know Your Customer) or Biometric SDK for Native iOS and Android platforms to facilitate identity verification.',
-  },
-  {
-    id: 3,
     name: 'OXY Creative Inc',
-    description: 'Software Developer',
+    description: 'Full Stack Developer',
     year: 'Jan 2021 - Mar 2024',
     employmentType: 'full-time',
     location: 'Jakarta Selatan - Indonesia',
@@ -38,7 +26,7 @@ export const experienceList: Experience[] = [
     task: 'Develop a software product with specified features and functionalities meeting project requirements and deadlines',
   },
   {
-    id: 4,
+    id: 3,
     name: 'Kreasi Arduo Indonesia',
     description: 'Web Developer',
     year: 'Sep 2020 - Des 2020',
@@ -50,7 +38,7 @@ export const experienceList: Experience[] = [
     task: 'Maintain and add features to the existing admin dashboard, collaborating with an Odoo developer to integrate ERP data.',
   },
   {
-    id: 5,
+    id: 4,
     name: 'DHD mitra indotama',
     description: 'Software Developer',
     year: 'Jan 2020 - Sep 2020',
