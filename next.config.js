@@ -59,16 +59,16 @@ module.exports = withPlugins(plugins, {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "i.scdn.co",
-        port: "",
-        pathname: "**",
+        protocol: 'https',
+        hostname: 'i.scdn.co',
+        port: '',
+        pathname: '**',
       },
     ],
-    domains: ['images.ctfassets.net','images.eu.ctfassets.net'],
+    domains: ['images.ctfassets.net', 'images.eu.ctfassets.net'],
   },
 
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
+  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js', 'tsx'],
 
   webpack(config) {
     config.module.rules.push({
