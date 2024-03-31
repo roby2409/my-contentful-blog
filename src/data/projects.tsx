@@ -148,4 +148,10 @@ export const projectMobiles: ProjectType[] = [
     img: 'sdk',
     imgMobile: ['1.gif', '2.gif', '3.gif', '4.gif'],
   },
+  {
+    name: 'App order CCTV',
+    description: 'this app for order cctv and connect with whatsapp',
+    img: 'cctv',
+    imgMobile: ['1.png', '2.png', '3.png'],
+  },
 ];
