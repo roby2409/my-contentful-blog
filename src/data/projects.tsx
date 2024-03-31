@@ -144,7 +144,7 @@ export const projectMobiles: ProjectType[] = [
   },
   {
     name: 'Create Sdk swift private framework',
-    description: 'this sdk i created when worked this sdk used bank',
+    description: 'this is liveness sdk, i created when worked this sdk used bank',
     img: 'sdk',
     imgMobile: ['1.gif', '2.gif', '3.gif', '4.gif'],
   },
