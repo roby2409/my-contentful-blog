@@ -132,7 +132,7 @@ export const projectMobiles: ProjectType[] = [
   },
   {
     name: 'Cesa (Cerdas Sosial Media)',
-    description: 'Aplikasi pendeteksi kecanduan gadget',
+    description: 'Aplikasi for detection gadget addictive',
     img: 'cesa',
     imgMobile: ['1.png', '2.png', '3.png', '4.png'],
   },
@@ -153,5 +153,11 @@ export const projectMobiles: ProjectType[] = [
     description: 'this app for order cctv and connect with whatsapp',
     img: 'cctv',
     imgMobile: ['1.png', '2.png', '3.png'],
+  },
+  {
+    name: 'Aplikasi Kancil',
+    description: "Application to test children's personality through drawing and questions",
+    img: 'kancil',
+    imgMobile: ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png'],
   },
 ];
