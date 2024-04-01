@@ -4,34 +4,45 @@ import { GetServerSideProps } from 'next';
 import { revalidateDuration } from './utils/constants';
 
 function generateSiteMap(data: Array<PageBlogPostFieldsFragment | null>, host: string | null) {
+  const homepage = `https://${host}`;
   const urls = data?.map(item => {
     const slug = item?.slug;
     return {
-      url: `${host}/blogs/${slug}`,
+      url: `${homepage}/blogs/${slug}`,
     };
   });
 
   return `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>${host}</loc>
+        <loc>${homepage}</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
       </url>
       <url>
-        <loc>${host}/about</loc>
+        <loc>${homepage}/about</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
       </url>
       <url>
-        <loc>${host}/projects</loc>
+        <loc>${homepage}/projects</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
       </url>
       <url>
-        <loc>${host}/uses</loc>
+        <loc>${homepage}/uses</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
       </url>
       <url>
-        <loc>${host}/contact-us</loc>
+        <loc>${homepage}/contact-us</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
       </url>
       ${urls
         ?.map((item: any) => {
@@ -40,6 +51,8 @@ function generateSiteMap(data: Array<PageBlogPostFieldsFragment | null>, host: s
             `<url>
               <loc>${item?.url}</loc>
               <lastmod>${new Date().toISOString()}</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.5</priority>
             </url>
           `
           );
