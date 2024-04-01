@@ -68,7 +68,7 @@ module.exports = withPlugins(plugins, {
     domains: ['images.ctfassets.net', 'images.eu.ctfassets.net'],
   },
 
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js', 'ts'],
+  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js', 'tsx'],
 
   webpack(config) {
     config.module.rules.push({
