@@ -20,7 +20,7 @@ const config: DefaultSeoProps = {
     images: [
       {
         url: 'https://robysetiawan.vercel.app/static/home-image-preview.jpg',
-        alt: 'Islem Maboud Portfolio',
+        alt: 'Roby Setiawan Portfolio',
         type: 'image/jpg',
         secureUrl: 'https://robysetiawan.vercel.app/static/home-image-preview.jpg'
       }
