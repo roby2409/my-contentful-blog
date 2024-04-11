@@ -18,8 +18,8 @@ const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
         </Text>
 
         <Text style={{ marginBottom: `1.5rem` }}>
-          With over 8 years of hands-on experience in programming, I have honed my skills in
-          utilizing frameworks and libraries such as{' '}
+          With over 8 years of hands-on experience in programming, I have honed my skills web
+          development in utilizing frameworks and libraries such as{' '}
           <LinkTarget href="https://codeigniter.com" target="_blank">
             Codeigniter
           </LinkTarget>{' '}
@@ -36,10 +36,6 @@ const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
             ReactJS
           </LinkTarget>{' '}
           ,{' '}
-          <LinkTarget href="https://developer.apple.com/swift" target="_blank">
-            Swift
-          </LinkTarget>{' '}
-          ,{' '}
           <LinkTarget href="https://nuxt.com" target="_blank">
             Nuxt JS
           </LinkTarget>{' '}
@@ -47,12 +43,18 @@ const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
           <LinkTarget href="https://nextjs.org" target="_blank">
             Next JS
           </LinkTarget>{' '}
-          , and More expert with{' '}
+          for mobile development, i have expert with{' '}
           <LinkTarget href="https://flutter.dev" target="_blank">
-            Flutter
+            Flutter,
           </LinkTarget>{' '}
-          , among others. Currently, I am dedicated to deepening my expertise in Front End
-          Development and DevOps
+          <LinkTarget href="https://www.reactnative.dev" target="_blank">
+            React native,
+          </LinkTarget>{' '}
+          and{' '}
+          <LinkTarget href="https://www.swift.org/" target="_blank">
+            Swift
+          </LinkTarget>{' '}
+          . Currently, I am dedicated to deepening my expertise in Front End Development and DevOps
         </Text>
       </React.Fragment>
       {!short && (
