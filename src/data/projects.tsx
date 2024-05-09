@@ -1,12 +1,12 @@
 import { ProjectType } from '@src/types/projects';
 
 export const projectWebs: ProjectType[] = [
-  {
-    name: 'lms Web Admin dashboard',
-    description: 'dashboard admin lms (private project from singapore) Using Tailwindcss, React JS',
-    link: '#',
-    img: 'admindashboard.png',
-  },
+  // {
+  //   name: 'lms Web Admin dashboard',
+  //   description: 'dashboard admin lms (private project from singapore) Using Tailwindcss, React JS',
+  //   link: '#',
+  //   img: 'admindashboard.png',
+  // },
   {
     name: 'Kejagung Dashboard',
     description: 'Dashboard untuk kejaksaan Using Tailwindcss, Nuxt JS',
