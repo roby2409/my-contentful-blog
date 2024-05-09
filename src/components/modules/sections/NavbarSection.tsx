@@ -13,6 +13,7 @@ const NavbarSection: React.FC = () => {
     { id: 5, text: 'Uses', to: '/uses', dropdown: 'Uses' },
     { id: 6, text: 'Activity', to: '/activity', dropdown: 'Activity' },
     { id: 7, text: 'Blog', to: '/blog', dropdown: 'Blog' },
+    { id: 8, text: 'Download Document support', to: '/docsupport', dropdown: 'Document support' },
   ];
 
   const router = useRouter();

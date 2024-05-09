@@ -1,6 +1,6 @@
 import { Heading, Text } from '@src/components/design-system';
 
-export default function DocProfileSection() {
+export default function DocSupportSection() {
   return (
     <section className="mx-auto -mt-12 mb-12 flex h-full flex-col p-4 md:-mt-0 md:p-0">
       <Heading className="mt-5">Document support 💻</Heading>
