@@ -5,6 +5,7 @@ export { default as NavbarSection } from './sections/NavbarSection';
 export { default as ExperienceSection } from './sections/ExperienceSection';
 export { default as FooterSection } from './sections/FooterSection';
 export { default as UsesSection } from './sections/UsesSection';
+export { default as DocProfileSection } from './sections/DocProfileSection';
 export { default as ErrorSection } from './sections/ErrorSection';
 export { default as ActivitySection } from './sections/ActivitySection';
 export { default as StorySection } from './sections/StorySection';
