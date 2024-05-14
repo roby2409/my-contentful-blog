@@ -10,7 +10,7 @@ export default function DocSupportSection() {
             Latest Curriculum Vitae - &nbsp;
             <a
               className="text-[#10161a] dark:text-gray-100"
-              href={`${process.env.NEXT_PUBLIC_BASE_URL}resume.pdf`}
+              href={`${process.env.NEXT_PUBLIC_BASE_URL}/resume.pdf`}
               target="_blank"
               rel="noreferrer"
             >
@@ -21,7 +21,7 @@ export default function DocSupportSection() {
             Latest Verklaring - &nbsp;
             <a
               className="text-[#10161a] dark:text-gray-100"
-              href={`${process.env.NEXT_PUBLIC_BASE_URL}packlaring.pdf`}
+              href={`${process.env.NEXT_PUBLIC_BASE_URL}/packlaring.pdf`}
               target="_blank"
               rel="noreferrer"
             >
