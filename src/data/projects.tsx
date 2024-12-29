@@ -8,6 +8,12 @@ export const projectWebs: ProjectType[] = [
   //   img: 'admindashboard.png',
   // },
   {
+    name: 'Langaroo',
+    description: 'Aplikasi startup freelance di sini',
+    link: 'https://play.google.com/store/apps/details?id=com.langaroo&hl=id',
+    img: 'langaroo.png',
+  },
+  {
     name: 'Kejagung Dashboard',
     description: 'Dashboard untuk kejaksaan Using Tailwindcss, Nuxt JS',
     link: '#',
