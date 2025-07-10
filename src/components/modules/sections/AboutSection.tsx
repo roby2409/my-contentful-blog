@@ -11,7 +11,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
       <Heading>About 💭</Heading>
       <React.Fragment>
         <Text style={{ marginBottom: `1.5rem` }}>
-          I&apos;m a 28-year-old enthusiast, deeply immersed in the dynamic world of technology,
+          I&apos;m a 29-year-old enthusiast, deeply immersed in the dynamic world of technology,
           driven by an insatiable curiosity to explore its limitless possibilities. My passion lies
           in the intricate art of software development, where I constantly seek to innovate and
           create impactful solutions that resonate with users worldwide.&quot;
@@ -20,6 +20,10 @@ const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
         <Text style={{ marginBottom: `1.5rem` }}>
           With over 8 years of hands-on experience in programming, I have honed my skills web
           development in utilizing frameworks and libraries such as{' '}
+          <LinkTarget href="https://flask.palletsprojects.com/en/stable/" target="_blank">
+            Flask (Python Framework)
+          </LinkTarget>{' '}
+          ,{' '}
           <LinkTarget href="https://codeigniter.com" target="_blank">
             Codeigniter
           </LinkTarget>{' '}
@@ -44,6 +48,9 @@ const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
             Next JS
           </LinkTarget>{' '}
           for mobile development, i have expert with{' '}
+          <LinkTarget href="https://flutter.dev" target="_blank">
+            Kotlin,
+          </LinkTarget>{' '}
           <LinkTarget href="https://flutter.dev" target="_blank">
             Flutter,
           </LinkTarget>{' '}

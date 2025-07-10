@@ -9,7 +9,7 @@ export const projectWebs: ProjectType[] = [
   // },
   {
     name: 'Langaroo',
-    description: 'Aplikasi startup freelance di sini',
+    description: 'Aplikasi startup freelance as (iOS Developer)',
     link: 'https://play.google.com/store/apps/details?id=com.langaroo&hl=id',
     img: 'langaroo.png',
   },
