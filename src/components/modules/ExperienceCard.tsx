@@ -53,6 +53,12 @@ const ExperienceCard: React.FC<Experience> = props => {
         <div className="relative my-4">
           <Text>{props.task}</Text>
         </div>
+
+        {props.summary && (
+          <div className="relative my-4 rounded-lg border border-teal-200 bg-white p-4 shadow-sm dark:border-teal-700 dark:bg-[#1a2332]/80">
+            <Text className="whitespace-pre-line text-sm">{props.summary}</Text>
+          </div>
+        )}
         <div className="mt-2 w-full flex-row items-center justify-between">
           <div className="mb-4 mt-2 flex items-center">
             <FiMapPin className="mr-2 text-gray-600 dark:text-gray-300" />

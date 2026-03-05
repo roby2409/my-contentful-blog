@@ -9,5 +9,6 @@ export interface Experience {
   current: boolean;
   link: string;
   task: string;
+  summary?: string;
   logo?: string;
 }

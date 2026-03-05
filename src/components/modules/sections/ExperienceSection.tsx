@@ -27,6 +27,7 @@ export default function ExperienceSection() {
               current={item.current}
               link={item.link}
               task={item.task}
+              summary={item.summary}
             />
           );
         })}

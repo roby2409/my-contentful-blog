@@ -2,16 +2,32 @@ import { Experience } from '@src/types/experience';
 
 export const experienceList: Experience[] = [
   {
+    id: 0,
+    name: 'Langaroo+',
+    description: 'iOS Developer',
+    year: 'Mar 2024 - Mar 2026',
+    employmentType: 'freelance',
+    location: 'Greater London, England',
+    remote: true,
+    current: true,
+    link: 'https://langaroo.co/',
+    summary:
+      "SENIOR iOS ENGINEER | NATIVE SPECIALIST | 8+ YEARS EXP\n\nI am a Senior iOS Engineer specialized in building high-performance, scalable mobile applications using Native iOS (Swift/SwiftUI). With over 8 years of experience — including 2+ years of successful remote collaboration.\n\nWHAT I BRING TO THE TABLE:\n\n● Real-Time & Live Features: Proven experience engineering live streaming, live chat, and real-time interactive features for high-concurrency social platforms — including auto-translation and live gifting at scale.\n\n● Architectural Rigor: I prioritize long-term stability and maintainability through Clean Architecture, MVVM, and the KISS principle — writing code that's easy to scale, debug, and hand off.\n\n● Full Ownership Mindset: From feature development and UI/UX implementation based on Figma designs to TestFlight distribution and App Store publishing — I own the full iOS lifecycle end to end.\n\n● Deployment - I am responsible for running the full application distribution process, through the testflight stage, first to pass the QA (Quality insurance) teams process before the submission process.\n\nI thrive in remote-first, global product teams that value technical ownership, clear communication, and clean, scalable code.\n\nCORE STACK: iOS (Swift, SwiftUI, UIKit), Clean Architecture, REST APIs, Push Notifications (APNS), Local Persistence, Firebase, AWS.",
+    task: 'Served as the primary iOS engineer for a social media platform with 500K+ downloads, built around breaking language barriers through real-time in-chat translation. Owned the full development lifecycle — from architecting features to App Store publishing — across a codebase maintained and scaled for 2+ years in a high-growth environment. Delivered core platform features including live streaming with auto-translation, LangChat (real-time translated messaging), PinCast (image & video sharing), Live Stream & gifting, and a rewards system. Drove continuous UI/UX improvements based on Figma designs, maintained high crash-free rates in production, and managed the full release pipeline including TestFlight distribution and App Store submissions.',
+  },
+  {
     id: 1,
     name: "Djelas Tandatangan Bersama (Part of OXY Creative's Outsource Team.)",
-    description: 'Mobile Software Developer - iOS',
-    year: 'Jun 2021 - Feb 2024',
+    description: 'iOS Developer',
+    year: 'Jun 2021 - Mar 2024',
     employmentType: 'full-time',
     location: 'Jakarta Selatan, Indonesia',
     remote: true,
     current: false,
     link: 'https://www.djelas.id/',
-    task: 'Develop responsive and interactive application using NuxtJS and implemented robust front-end achitecture and optimized code performance.',
+    summary:
+      "iOS ENGINEER | MOBILE SDK & LIBRARY DEVELOPMENT | Swift · Flutter · React Native\n\nPart of OXY Creative's outsource team, contributing as an iOS engineer across multiple client projects. Specialized in building private Swift Frameworks, SDKs, plugins, and production-grade iOS applications.\n\nWHAT I BRING TO THE TABLE:\n\n● SDK & Framework Engineering: Developed private Swift Frameworks for SDK creation, built plugins for Flutter and React Native, and published packages to CocoaPods — with comprehensive documentation for each.\n\n● iOS App Development: Built iOS applications using UIKit and SwiftUI, including client-facing apps and demo apps for private frameworks. Successfully published apps to the App Store.\n\n● Full Lifecycle Involvement: Participated in all stages of software development — from planning and implementation to testing, debugging, and deployment.\n\n● Client-Facing Communication: Presented progress and deliverables in meetings with clients and management, ensuring alignment throughout the project lifecycle.\n\nCORE STACK: Swift, UIKit, SwiftUI, Flutter, React Native, CocoaPods, Xcode, CI/CD, GitLab, Figma.",
+    task: "Part of OXY Creative's outsource team, working as an iOS engineer on multiple client projects. Developed private Swift Frameworks for SDK creation, built iOS applications using UIKit and SwiftUI, and created plugins for Flutter and React Native. Published apps to the App Store and packages to CocoaPods, with full documentation. Involved in all stages of development from planning to deployment, including bug triaging, testing, and presenting progress to clients and management.",
   },
   {
     id: 2,
@@ -23,7 +39,9 @@ export const experienceList: Experience[] = [
     remote: false,
     current: false,
     link: 'https://www.oxycreative.com',
-    task: 'Develop a software product with specified features and functionalities meeting project requirements and deadlines',
+    summary:
+      'SOFTWARE ENGINEER | MOBILE & SDK DEVELOPMENT | Flutter · Kotlin · Swift\n\nFull-stack software engineer at a creative software house, working across mobile development, private SDK and plugin engineering, and web — delivering products for diverse clients across multiple platforms.\n\nWHAT I BRING TO THE TABLE:\n\n● SDK & Plugin Engineering: Built, managed, and maintained private SDKs and plugins across iOS (Swift), Android (Kotlin), Flutter, and React Native — ensuring reliability and reusability across client projects.\n\n● Cross-Platform Mobile: Delivered mobile applications across iOS, Android, and Flutter, adapting to varying client requirements and technical stacks.\n\n● Web Development: Contributed to front-end web projects using React.js, Nuxt.js, Next.js, and Tailwind CSS alongside mobile workstreams.\n\n● Collaborative Delivery: Coordinated with project managers and development teams on objectives, conducted testing, and presented deliverables to clients and management.\n\nCORE STACK: Swift, Objective-C, Flutter, Kotlin, React Native, React.js, Nuxt.js, Next.js, TypeScript, Tailwind CSS, Figma, Jira.',
+    task: 'Worked as a full-stack software engineer at a software house, building and maintaining private SDKs, plugins, and applications across iOS, Android, Flutter, React Native, and web. Identified and resolved implementation issues across debug and production builds, collaborated with project managers and teams on objectives, conducted testing, and regularly presented progress to clients and management.',
   },
   {
     id: 3,
@@ -35,18 +53,20 @@ export const experienceList: Experience[] = [
     remote: false,
     current: false,
     link: 'https://www.artugo.co.id/',
-    task: 'Maintain and add features to the existing admin dashboard, collaborating with an Odoo developer to integrate ERP data.',
+    task: 'Maintained and extended a Laravel 8 admin dashboard, adding new sections to the homepage, resolving bugs, and integrating ERP data in collaboration with an Odoo developer. Designed database schemas and translated application requirements into scalable solutions using TailwindCSS and Ant Design.',
   },
   {
     id: 4,
     name: 'DHD mitra indotama',
-    description: 'Software Developer',
+    description: 'Full Stack Developer',
     year: 'Jan 2020 - Sep 2020',
     employmentType: 'full-time',
     location: 'Palembang, Sumatera Selatan - Indonesia',
     remote: false,
     current: false,
     link: '#',
-    task: 'Develop and implemented application software integrations as a web for all interdepartmental and customer facing projects.',
+    summary:
+      'FULL STACK DEVELOPER | MOBILE & WEB | Flutter · CodeIgniter · Laravel\n\nEarly-career full-stack role at a startup, contributing across mobile and web development — from building REST APIs and admin dashboards to delivering a cross-platform Flutter mobile application.\n\nWHAT I BRING TO THE TABLE:\n\n● Mobile Development: Built a cross-platform marketplace mobile application using Flutter, delivering a consistent experience across iOS and Android.\n\n● Backend & API Development: Developed REST APIs using CodeIgniter 3 and Laravel to power both the mobile app and web admin dashboard.\n\n● Frontend & Admin Dashboard: Built the web frontend and admin panel, ensuring seamless integration between frontend and backend systems.\n\n● Startup Mindset: Contributed to app design and architecture in a fast-moving startup environment, collaborating with the team to deliver within tight timelines.\n\nCORE STACK: Flutter, CodeIgniter 3, Laravel, MySQL, Bootstrap, jQuery, WordPress, Trello.',
+    task: 'Worked as a full-stack developer at a startup, building a cross-platform marketplace mobile application using Flutter alongside a web backend powered by CodeIgniter 3 and Laravel. Developed REST APIs, built the admin dashboard and frontend web interface, and ensured seamless frontend-backend integration. Contributed to app design and architecture, collaborating with the team to deliver high-quality software within project timelines.',
   },
 ];
