@@ -11,76 +11,97 @@ const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
       <Heading>About 💭</Heading>
       <React.Fragment>
         <Text style={{ marginBottom: `1.5rem` }}>
-          I&apos;m a 29-year-old enthusiast, deeply immersed in the dynamic world of technology,
-          driven by an insatiable curiosity to explore its limitless possibilities. My passion lies
-          in the intricate art of software development, where I constantly seek to innovate and
-          create impactful solutions that resonate with users worldwide.&quot;
+          <strong>Senior iOS Engineer | Native Specialist | 6+ Years Experience</strong>
         </Text>
 
         <Text style={{ marginBottom: `1.5rem` }}>
-          With over 8 years of hands-on experience in programming, I have honed my skills web
-          development in utilizing frameworks and libraries such as{' '}
-          <LinkTarget href="https://flask.palletsprojects.com/en/stable/" target="_blank">
-            Flask (Python Framework)
-          </LinkTarget>{' '}
-          ,{' '}
-          <LinkTarget href="https://codeigniter.com" target="_blank">
-            Codeigniter
-          </LinkTarget>{' '}
-          ,{' '}
-          <LinkTarget href="https://laravel.com" target="_blank">
-            Laravel
-          </LinkTarget>{' '}
-          ,{' '}
-          <LinkTarget href="https://vuejs.org" target="_blank">
-            VueJS
-          </LinkTarget>{' '}
-          ,{' '}
-          <LinkTarget href="https://react.dev" target="_blank">
-            ReactJS
-          </LinkTarget>{' '}
-          ,{' '}
-          <LinkTarget href="https://nuxt.com" target="_blank">
-            Nuxt JS
-          </LinkTarget>{' '}
-          ,{' '}
-          <LinkTarget href="https://nextjs.org" target="_blank">
-            Next JS
-          </LinkTarget>{' '}
-          for mobile development, i have expert with{' '}
+          I am a Senior iOS Engineer specialized in building high-performance, scalable mobile
+          applications using Native iOS (
+          <LinkTarget href="https://developer.apple.com/swift/" target="_blank">
+            Swift
+          </LinkTarget>
+          /SwiftUI). With over 6 years of experience — including 2+ years of successful remote
+          collaboration as the primary iOS engineer for{' '}
+          <LinkTarget href="https://langaroo.com" target="_blank">
+            Langaroo
+          </LinkTarget>
+          , a social media platform with 500K+ downloads built around breaking language barriers
+          through real-time in-chat translation.
+        </Text>
+
+        <Text style={{ marginBottom: `1.5rem` }}>
+          <strong>What I Bring:</strong> Proven experience engineering real-time features (live
+          streaming, live chat, auto-translation, live gifting) for high-concurrency platforms. I
+          prioritize long-term stability through Clean Architecture, MVVM, and SOLID principles. I
+          own the full iOS lifecycle — from Figma-based UI/UX implementation to TestFlight
+          distribution and App Store publishing.
+        </Text>
+
+        <Text style={{ marginBottom: `1.5rem` }}>
+          <strong>Core Stack:</strong> iOS (
+          <LinkTarget href="https://developer.apple.com/swift/" target="_blank">
+            Swift
+          </LinkTarget>
+          , SwiftUI, UIKit), Clean Architecture, REST APIs, Push Notifications (APNS), Local
+          Persistence, Firebase, AWS. Beyond iOS, I have expert-level experience with{' '}
           <LinkTarget href="https://flutter.dev" target="_blank">
-            Kotlin,
+            Flutter
           </LinkTarget>{' '}
-          <LinkTarget href="https://flutter.dev" target="_blank">
-            Flutter,
-          </LinkTarget>{' '}
-          <LinkTarget href="https://www.reactnative.dev" target="_blank">
-            React native,
+          (4+ years) and proficiency in{' '}
+          <LinkTarget href="https://kotlinlang.org" target="_blank">
+            Kotlin
           </LinkTarget>{' '}
           and{' '}
-          <LinkTarget href="https://www.swift.org/" target="_blank">
-            Swift
-          </LinkTarget>{' '}
-          . Currently, I am dedicated to deepening my expertise in Front End Development and DevOps
+          <LinkTarget href="https://reactnative.dev" target="_blank">
+            React Native
+          </LinkTarget>
+          . My full-stack background includes{' '}
+          <LinkTarget href="https://laravel.com" target="_blank">
+            Laravel
+          </LinkTarget>
+          ,{' '}
+          <LinkTarget href="https://flask.palletsprojects.com/" target="_blank">
+            Flask
+          </LinkTarget>
+          ,{' '}
+          <LinkTarget href="https://react.dev" target="_blank">
+            React
+          </LinkTarget>
+          , and{' '}
+          <LinkTarget href="https://nextjs.org" target="_blank">
+            Next.js
+          </LinkTarget>
+          , enabling complete mobile solutions with seamless backend integration.
         </Text>
       </React.Fragment>
       {!short && (
         <React.Fragment>
           <Text style={{ marginBottom: `1.5rem` }}>
-            Professionally, I&apos;m contributing my skills as a Software Engineer at{' '}
-            <LinkTarget href="https://oxycreative.com" target="_blank">
-              OXY Creative
+            Currently serving as the primary iOS engineer at{' '}
+            <LinkTarget href="https://langaroo.com" target="_blank">
+              Langaroo
             </LinkTarget>{' '}
-            , where I actively engage in innovative projects and contribute to the dynamic tech
-            landscape. In addition to my full-time role, I also take on freelance projects, allowing
-            me to further diversify my experience as a software developer.
+            (Mar 2024 - Present, Remote), where I&apos;ve owned the full development lifecycle
+            across a codebase maintained and scaled for 2+ years. Delivered core features including
+            live streaming with auto-translation, LangChat (real-time messaging), PinCast (media
+            sharing), and rewards systems — while maintaining high crash-free rates and managing the
+            complete release pipeline.
+          </Text>
+
+          <Text style={{ marginBottom: `1.5rem` }}>
+            I thrive in remote-first, global product teams that value technical ownership, clear
+            communication, and clean, scalable code.{' '}
+            <strong>Open to international opportunities</strong> where I can leverage my expertise
+            in Swift/SwiftUI to build exceptional mobile experiences.
           </Text>
         </React.Fragment>
       )}
       <Text>
-        Let&apos;s connect and explore the endless possibilities at the intersection of technology
-        and innovation! 👨‍💻✨ #SoftwareDeveloper #WebDevelopment #MobileApps #TechEnthusiast
-        #DevOpsEngineer
+        🎯 <strong>Seeking:</strong> Senior iOS Engineer roles (remote/international) •{' '}
+        <strong>Available for:</strong> Full-time positions, contract work, technical collaborations
+        <br />
+        Let&apos;s build something amazing! 🚀 #SenioriOSDeveloper #SwiftEngineer #RemoteWork
+        #OpenToWork
       </Text>
     </section>
   );
